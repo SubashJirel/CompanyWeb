@@ -1,7 +1,12 @@
 import React from 'react';
+import CareerHero from '../../sections/career/CareerHero';
 
 function Career() {
-  return <div>Career</div>;
+  return (
+    <>
+      <CareerHero />
+    </>
+  );
 }
 
 export default Career;
