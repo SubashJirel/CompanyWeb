@@ -7,6 +7,9 @@ export default {
         orange: '#E53B3A',
         primary_blue: '#001C48',
       },
+      screens: {
+        'mini-desktop': '870px',
+      },
     },
   },
   plugins: [],
