@@ -1,4 +1,44 @@
 import React from 'react';
+import CareerValuesBox from './CareerValuesBox';
+
+const careerValueContent = [
+  {
+    imgSrc: '/learning.svg',
+    heading: 'Continuous Learning',
+    paragraph:
+      "We invest in our team's growth through ongoing training, mentorship, and opportunities to expand your skill set. We're dedicated to your professional development journey.",
+  },
+  {
+    imgSrc: '/work.svg',
+    heading: 'Team Work',
+    paragraph:
+      'We believe that the best solutions come from diverse perspectives and collaborative efforts.',
+  },
+  {
+    imgSrc: '/innovation.svg',
+    heading: 'Innovation',
+    paragraph:
+      "Whether it's the quality of our work, the impact we make, or the relationships we build, we consistently strive for the highest standards.",
+  },
+  {
+    imgSrc: '/mentorship.svg',
+    heading: 'Mentorship',
+    paragraph:
+      'We embrace change, learn from challenges, and remain resilient in the face of obstacles, always seeking opportunities for improvement.',
+  },
+  {
+    imgSrc: '/tangible.svg',
+    heading: 'Tangible Impact',
+    paragraph:
+      "We're committed to delivering solutions that not only meet but exceed expectations.",
+  },
+  {
+    imgSrc: '/adaptability.svg',
+    heading: 'Adaptability',
+    paragraph:
+      'Thrive in a fast-paced world with resilience as your ally, valuing and cultivating adaptability in your career journey.',
+  },
+];
 
 const BelieveIn = () => {
   return (
@@ -21,6 +61,16 @@ function CareerValues() {
   return (
     <div className="justify-center py-24 text-center">
       <BelieveIn />
+      <div className="flex flex-wrap justify-center gap-x-8 gap-y-8 px-2 text-left md:gap-y-12">
+        {careerValueContent.map((val, index) => (
+          <CareerValuesBox
+            key={index}
+            imgSrc={val.imgSrc}
+            heading={val.heading}
+            paragraph={val.paragraph}
+          />
+        ))}
+      </div>
     </div>
   );
 }
