@@ -3,7 +3,7 @@ import CareerCaresBox from './CareerCaresBox';
 const careerCaresContent = [
   {
     imgSrc: '/performance.svg',
-    heading: 'Performance Bonus',
+    heading: 'Performance Bonuses',
   },
   {
     imgSrc: '/health.svg',
@@ -28,14 +28,14 @@ const careerCaresContent = [
 ];
 function CareerCares() {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center bg-[#ffffe1]">
+    <section className="flex min-h-screen border-2 border-red-600 flex-col items-center justify-center bg-[#ffffe1]">
       <div className="2xl:container">
         <div className="grid py-16 md:grid-cols-3">
           <div className="flex flex-col gap-4 px-6 pb-10 md:mx-auto lg:pl-20">
             <h2 className="text-3xl font-bold text-blue-950">
               Metalogic Cares For You
             </h2>
-            <p className="text-sm text-ui-500">
+            <p className="text-sm ">
               We&apos;re less about valuing perks and more about valuing people.
               Our employee benefits are built around enhancing your wellbeing -
               at work and at home

@@ -59,19 +59,23 @@ const BelieveIn = () => {
 
 function CareerValues() {
   return (
-    <div className="justify-center py-24 text-center border-2 border-red-600 bg-[#F6F8FF]">
-      <BelieveIn />
-      <div className="flex flex-wrap justify-center gap-x-8 gap-y-8 px-2 text-left md:gap-y-12">
-        {careerValueContent.map((val, index) => (
-          <CareerValuesBox
-            key={index}
-            imgSrc={val.imgSrc}
-            heading={val.heading}
-            paragraph={val.paragraph}
-          />
-        ))}
+    <section className="bg-[#F6F8FF]">
+      <div className="2xl:container mx-auto">
+        <div className="justify-center py-24 text-center border-2 border-red-600 ">
+          <BelieveIn />
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-8 px-2 text-left md:gap-y-12">
+            {careerValueContent.map((val, index) => (
+              <CareerValuesBox
+                key={index}
+                imgSrc={val.imgSrc}
+                heading={val.heading}
+                paragraph={val.paragraph}
+              />
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -68,21 +68,25 @@ const LifeAt = () => {
 };
 function CareerBenefits() {
   return (
-    <div className="justify-center py-16 text-center">
-      <LifeAt />
-      <div className=" border-2 border-green-500 grid gap-x-8 gap-y-8 px-2 text-left md:grid-cols-3 md:gap-y-12 md:px-4 lg:grid-cols-4 lg:px-12">
-        {careerBenefitContent.map((val, index) => {
-          return (
-            <CareerBenefitsBox
-              key={index}
-              imgSrc={val.imgSrc}
-              heading={val.heading}
-              paragraph={val.paragraph}
-            />
-          );
-        })}
+    <section className="flex min-h-screen items-center justify-center">
+      <div className="2xl:container">
+        <div className="justify-center py-16 text-center">
+          <LifeAt />
+          <div className=" border-2 border-green-500 grid gap-x-8 gap-y-8 px-2 text-left md:grid-cols-3 md:gap-y-12 md:px-4 lg:grid-cols-4 lg:px-12">
+            {careerBenefitContent.map((val, index) => {
+              return (
+                <CareerBenefitsBox
+                  key={index}
+                  imgSrc={val.imgSrc}
+                  heading={val.heading}
+                  paragraph={val.paragraph}
+                />
+              );
+            })}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
