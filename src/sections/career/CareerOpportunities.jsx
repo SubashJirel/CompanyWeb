@@ -1,5 +1,5 @@
 import React from 'react';
-import '@radix-ui/themes/styles.css';
+
 import CareerOpportunitiesDropdown from './CareerOpportunitiesDropdown';
 import { Search } from 'lucide-react';
 import CareerOpportunitiesTable from './CareerOpportunitiesTable';

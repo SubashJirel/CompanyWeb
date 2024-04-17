@@ -28,7 +28,7 @@ const careerCaresContent = [
 ];
 function CareerCares() {
   return (
-    <section className="flex min-h-screen border-2 border-red-600 flex-col items-center justify-center bg-[#ffffe1]">
+    <section className="flex min-h-screen  flex-col items-center justify-center bg-[#ffffe1]">
       <div className="2xl:container">
         <div className="grid py-16 md:grid-cols-3">
           <div className="flex flex-col gap-4 px-6 pb-10 md:mx-auto lg:pl-20">

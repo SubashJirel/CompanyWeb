@@ -61,7 +61,7 @@ function CareerValues() {
   return (
     <section className="bg-[#F6F8FF]">
       <div className="2xl:container mx-auto">
-        <div className="justify-center py-24 text-center border-2 border-red-600 ">
+        <div className="justify-center py-24 text-center  ">
           <BelieveIn />
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-8 px-2 text-left md:gap-y-12">
             {careerValueContent.map((val, index) => (

@@ -3,7 +3,7 @@ import React from 'react';
 function CareerHero() {
   return (
     <>
-      <div className=" h-[500px] items-center justify-center bg-[#C3C1C1] lg:px-32 h border-2 border-red-600 ">
+      <div className=" h-[500px] items-center justify-center bg-[#C3C1C1] lg:px-32 h  ">
         <h4 className="py-12 text-xl text-center  md:text-[22px] font-semibold">
           Careers
         </h4>
