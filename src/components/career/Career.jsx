@@ -4,6 +4,7 @@ import CareerValues from '../../sections/career/CareerValues';
 import CareerBenefits from '../../sections/career/CareerBenefits';
 import CareerCares from '../../sections/career/CareerCares';
 import CareerOpportunities from '../../sections/career/CareerOpportunities';
+import CareerNewsLetter from '../../sections/career/CareerNewsLetter';
 
 function Career() {
   return (
@@ -13,6 +14,7 @@ function Career() {
       <CareerBenefits />
       <CareerCares />
       <CareerOpportunities />
+      <CareerNewsLetter />
     </>
   );
 }
