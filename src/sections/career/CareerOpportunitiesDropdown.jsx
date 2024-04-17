@@ -22,7 +22,7 @@ const CareerOpportunitiesDropdown = () => {
   };
 
   return (
-    <div className="relative border border-pink-600  w-full">
+    <div className="relative  w-full">
       <button
         onClick={toggleDropdown}
         className="flex items-center px-4 py-1 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 w-full "

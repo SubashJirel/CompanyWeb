@@ -2,6 +2,7 @@ import React from 'react';
 import '@radix-ui/themes/styles.css';
 import CareerOpportunitiesDropdown from './CareerOpportunitiesDropdown';
 import { Search } from 'lucide-react';
+import CareerOpportunitiesTable from './CareerOpportunitiesTable';
 
 const CareerOpportunitiesSearchButton = () => {
   return (
@@ -24,9 +25,17 @@ function CareerOpportunities() {
             className="flex-1 rounded-lg border p-2 focus:outline-none"
             placeholder="Job Title/Keyword"
           />
-          <div className="flex border-2 border-green-600 w-full gap-2">
+          <div className="flex  w-full gap-2">
             <CareerOpportunitiesDropdown />
             <CareerOpportunitiesSearchButton />
+          </div>
+        </div>
+      </div>
+      <div className="mx-auto lg:w-[50%]">
+        <div className="px-2 py-4 text-lg font-semibold">2 Job Offers</div>
+        <div className="pb-10">
+          <div className="relative w-full  overflow-x-auto">
+            <CareerOpportunitiesTable />
           </div>
         </div>
       </div>
