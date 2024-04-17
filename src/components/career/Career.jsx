@@ -3,6 +3,7 @@ import CareerHero from '../../sections/career/CareerHero';
 import CareerValues from '../../sections/career/CareerValues';
 import CareerBenefits from '../../sections/career/CareerBenefits';
 import CareerCares from '../../sections/career/CareerCares';
+import CareerOpportunities from '../../sections/career/CareerOpportunities';
 
 function Career() {
   return (
@@ -11,6 +12,7 @@ function Career() {
       <CareerValues />
       <CareerBenefits />
       <CareerCares />
+      <CareerOpportunities />
     </>
   );
 }
